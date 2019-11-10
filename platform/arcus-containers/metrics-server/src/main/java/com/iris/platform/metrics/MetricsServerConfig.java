@@ -30,6 +30,9 @@ public class MetricsServerConfig {
    @Inject(optional = true) @Named("kairos.url")
    protected String url = "http://kairosops.eyeris:8080";
 
+   @Inject(optional = true) @Named("prometheus.url")
+   protected String prometheusUrl = "http://prometheus-pushgateway-service.default.svc.cluster.local";
+
    @Inject(optional = true) @Named("threads")
    protected int threads = 2*Runtime.getRuntime().availableProcessors();
 
@@ -78,6 +81,14 @@ public class MetricsServerConfig {
 
    public void setUrl(String url) {
       this.url = url;
+   }
+
+   public String getPrometheusUrl() {
+      return prometheusUrl;
+   }
+
+   public void setPrometheusUrl(String url) {
+      this.prometheusUrl = url;
    }
 
    public int getThreads() {
