@@ -190,6 +190,9 @@ ext.libraries << [
 		antlr4: "org.antlr:antlr4:4.5",
 		antlr4_runtime: "org.antlr:antlr4-runtime:4.5",
 
+		promethus: "io.prometheus:simpleclient:0.8.0",
+		promethus_pushgateway: "io.prometheus:simpleclient_pushgateway:0.8.0",
+
 // Formerly included in JDK
       javax_activation_api: 'javax.activation:javax.activation-api:1.2.0',
       javax_activation_impl: 'com.sun.activation:javax.activation:1.2.0',

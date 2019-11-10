@@ -25,6 +25,8 @@ dependencies {
    compile project(':common:arcus-model:platform-messages')
 
    compile libraries.httpClient
+   compile libraries.promethus
+   compile libraries.promethus_pushgateway
 
    //testCompile project(':arcus-lib').sourceSets.test.output
 }
